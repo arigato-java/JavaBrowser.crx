@@ -1,0 +1,95 @@
+body {
+  font-family: "DejaVu Sans",Helvetica,Ariel,YuGothic,'游ゴシック',"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"MS Gothic",'IPAゴシック',sans-serif;
+  font-size: 100%;
+}
+
+/* for newtab */
+#newtab #kakugen {
+  text-align: center;
+  margin-left: 4vh;
+  margin-right: 8vh;
+
+  animation: fadein 2s ease-out;
+}
+
+#newtab #kakugen a {
+  text-decoration: none;
+}
+
+
+#newtab .small {
+  font-size: 2.0em;
+  line-height: 130%;
+  margin-top: 10%;
+}
+
+#newtab .ltl-small {
+  /*font-size: 2.3em;*/
+  font-size: 5.5vh;
+  line-height: 170%;
+  margin-top: 15%;
+}
+
+#newtab .normal {
+  /*font-size: 2.8em;*/
+  font-size: 8vh;
+  line-height: 150%;
+  margin-top: 15%;
+}
+
+#newtab .large {
+  font-size: 10vh;
+  margin-top: 20%;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* for popup.html */
+body#popup {
+  min-width: 300px;
+  font-size: 0.85em;
+}
+
+#popup h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: -0.2em;
+}
+
+#popup h2 {
+  margin-top: 1.5em;
+  font-size: 1.0em;
+}
+
+#popup .links li {
+  margin-left: 0.7em;
+}
+
+#popup .cloud {
+  padding-left: 1.2em;
+}
+
+#popup .cloud li {
+  display: inline-block;
+  margin-left: 0.7em;
+}
+
+#popup hr {
+  margin-top: 2.0em;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+#popup .note {
+  color: darkgray;
+
+  font-size: 0.4em;
+
+  margin-left: 0.8em;
+  margin-right: 0.9em;
+}
