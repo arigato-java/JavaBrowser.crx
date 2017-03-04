@@ -26,6 +26,6 @@
   },
 
   "permissions": [
-    "tabs"
+    "https://ue4higkk44.execute-api.us-west-2.amazonaws.com/"
   ]
 }
