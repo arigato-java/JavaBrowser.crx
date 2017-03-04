@@ -35,6 +35,9 @@ function updateKakugen() {
     refineFontSize(
       document.getElementById("kakugen"), 
       j.kakugen);
+    
+    // テキストの改行を反映
+    txt.innerHTML = txt.innerText.replace(/\n/ug, "<br>");
 
 
     // 引用元を表示
