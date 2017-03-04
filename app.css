@@ -21,12 +21,16 @@ body#newtab {
   position: absolute;
 }
 
-#newtab #kakugen {
-  text-align: center;
-  margin-left: 4vh;
-  margin-right: 8vh;
+#newtab #kakugen {  
+  text-align: justify;
+  margin-left: 1.6em;
+  margin-right: 1em;
 
+  /* バランスを考えて、少し上に */
   margin-top: -8vh;
+
+  /* 先頭の〝 との兼ね合いを調整 */
+  text-indent: -1.25em;
 
   animation: fadein 2s ease-out;
 }
