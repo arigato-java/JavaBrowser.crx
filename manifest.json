@@ -3,7 +3,7 @@
 
   "name": "ジャバ人間ブラウザ",
   "description": "あなたのブラウザにジャバが来ます。",
-  "version": "5.0",
+  "version": "6.0",
 
   "browser_action": {
     "default_icon": {
@@ -28,6 +28,6 @@
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 
   "permissions": [
-    "https://ue4higkk44.execute-api.us-west-2.amazonaws.com/"
+    "https://arigato-java.download/"
   ]
 }
