@@ -1,0 +1,56 @@
+/* JavaButton.css -*- coding: utf-8 -*- */
+
+/* ここからカット */
+/* Crimson Javabo */
+.redjavabo {
+	display:inline-block;
+	text-decoration:none;
+	color:#fff;
+	font-family: 'ＭＳ Ｐゴシック', Osaka, sans-serif;
+	font-weight:bold;
+	background-color:#f00;
+	border-radius:.5em;
+	padding-top:1em;
+	padding-bottom:1em;
+	padding-left:2em;
+	padding-right:2em;
+	min-width:11em;
+	background-image:linear-gradient(to bottom, rgba(255,255,255,.17), rgba(255,255,255,.23) 40%, transparent 40%),
+		linear-gradient(to bottom, #ff8791, #b50010);
+	background-size:auto, auto;
+	background-position:0px 0px, 0px 0px;
+	text-align:center;
+	margin:.5em;
+}
+.redjavabo:active {
+	box-shadow:none;
+	background-image:linear-gradient(to top, #aa3030, #b50010);
+}
+/* Royal Blue Javabo */
+.bluejavabo {
+	display:inline-block;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	padding-left:2em;
+	padding-right:2em;
+	min-width:11em;
+	text-decoration:none;
+	color:#fff;
+	font-family: 'ＭＳ Ｐゴシック', Osaka, sans-serif;
+	font-weight:normal;
+	background-color:#007;
+	border-radius:.8em;
+	border: 2px solid #333;
+	background-color:#007;
+	background-image:linear-gradient(to bottom,rgb(125,227,255) 2px,rgb(39,181,247) 2px, rgb(7,123,242) 33%, rgb(0,32,115) 50%,rgb(0,34,70));
+	text-align:center;
+	margin:.5em;
+}
+/* ここまでカット */
+
+
+/* pervasive */
+body {
+	font-family: sans-serif;
+}
+	

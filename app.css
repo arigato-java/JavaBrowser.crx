@@ -100,7 +100,7 @@ body#popup {
 }
 
 #popup hr {
-  margin-top: 2.0em;
+  margin-top: 0;
   margin-left: 0.8em;
   margin-right: 0.8em;
 }
@@ -112,4 +112,35 @@ body#popup {
 
   margin-left: 0.8em;
   margin-right: 0.9em;
+}
+
+#popup .javabo {
+  text-align: center;
+}
+
+#popup .redjavabo {
+  font-size: 2em;
+
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  border-radius: 0;
+  
+  cursor: pointer;
+
+  /* 広告枠のように横いっぱいに伸ばす */
+  width: 120%;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* クリック時に、ボタンに枠が出ないようにする */
+#popup button.redjavabo:focus {
+  outline: none;
+}
+
+/* <button>の場合は、枠ぽい装飾を極力はずす */
+#popup button.redjavabo {
+  border: 0 none;
 }
