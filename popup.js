@@ -1,6 +1,19 @@
 "use strict";
 
 (function() {
+  // ボタンに流すテキスト群
+  const marqueeText = [
+    "【PR】 あなたとジャバ, 今すぐダウンロー",
+    "ド",
+    "【PR】 無料ジャバのダウンロード",
+    "【PR】 30億のデバイスで走る",
+    "【PR】 同意して無料ダウンロードを開始",
+  ];
+
+  // テキスト間に挟む空白
+  const marqueeWhitespace = "　".repeat(25);
+
+
   // Open links in newTab
   document.addEventListener("DOMContentLoaded", () => {
     enableLinks();
@@ -29,7 +42,14 @@
           {command: "playJavaVoice" }
         );
       });
-    }    
+    }
+
+    // 内容の構築
+    const marquee = document.querySelector(".redjavabo marquee");
+    marquee.textContent = marqueeText
+      .map(x => x + marqueeWhitespace)
+      .join("");
+    
   }
 
 })();
