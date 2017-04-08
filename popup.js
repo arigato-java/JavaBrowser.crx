@@ -4,6 +4,7 @@
   // Open links in newTab
   document.addEventListener("DOMContentLoaded", () => {
     enableLinks();
+    enableJavaButtons();
   });
 
   /**
@@ -17,4 +18,18 @@
       });
     } 
   }
+
+
+  // ジャバボタンを有効化
+  function enableJavaButtons() {
+    const javabos = document.querySelectorAll(".redjavabo");
+    for (const x of javabos) {
+      x.addEventListener("click", () => {
+        chrome.runtime.sendMessage(
+          {command: "playJavaVoice" }
+        );
+      });
+    }    
+  }
+
 })();
