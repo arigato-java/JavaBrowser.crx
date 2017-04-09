@@ -86,12 +86,18 @@ body#popup {
   font-size: 1.0em;
 }
 
+#popup .links,  #popup .cloud {
+  list-style: none;
+  -webkit-padding-start: 0;
+  text-align: center;
+}
+
 #popup .links li {
   margin-left: 0.7em;
 }
 
 #popup .cloud {
-  padding-left: 1.2em;
+  padding-left: 0;
 }
 
 #popup .cloud li {
@@ -118,7 +124,7 @@ body#popup {
   text-align: center;
 }
 
-#popup .redjavabo {
+#popup .adspace {
   font-size: 2em;
 
   margin-top: 0.2em;
@@ -136,11 +142,21 @@ body#popup {
 }
 
 /* クリック時に、ボタンに枠が出ないようにする */
-#popup button.redjavabo:focus {
+#popup button.adspace:focus {
   outline: none;
 }
 
 /* <button>の場合は、枠ぽい装飾を極力はずす */
-#popup button.redjavabo {
+#popup button.adspace {
   border: 0 none;
+}
+
+/* 後付けジャバボを、文字リンクに近づける */
+#popup a.redjavabo {
+  min-width: inherit;
+  padding: 0.2em 1.2em;
+  margin: 2px 0;
+  font-weight: inherit;
+  font-family: inherit;
+  border-radius: 6px;
 }

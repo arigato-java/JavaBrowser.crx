@@ -18,6 +18,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     enableLinks();
     enableJavaButtons();
+    javaButtonize();
   });
 
   /**
@@ -30,6 +31,17 @@
         chrome.tabs.create({active: true, url: x.href});
       });
     } 
+  }
+
+
+  /**
+   * ドキュメント内の主要なリンクをジャバボにする。
+   */
+  function javaButtonize() {
+    const links = document.querySelectorAll(".links a, .cloud a");
+    for (const x of links) {
+      x.classList.add("redjavabo");
+    }
   }
 
 
